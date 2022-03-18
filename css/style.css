@@ -185,7 +185,15 @@ header nav ul li p {
   left: 625px;
   bottom: 40px;
 }
-
+.share-icon {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  background-image: url(../img/Union.svg);
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
 .ed-request {
   width: 384px;
   height: 496px;
