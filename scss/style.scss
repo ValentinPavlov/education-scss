@@ -11,6 +11,12 @@ $font-color-fff:#fff;
 $font-color-000:#000000;
 $font-color-A8A8A8:#A8A8A8;
 $font-color-DFDFDE:#DFDFDE;
+$font-color-787878:#787878;
+$font-color-F2F2F2:#F2F2F2;
+$font-color-282828:#282828;
+$font-color-252525:#252525;
+$font-color-4A4A4A:#4A4A4A;
+
 
 
 %display-flex-spb {
@@ -20,7 +26,7 @@ $font-color-DFDFDE:#DFDFDE;
 
 %stages {
     width: 95px;
-    border: 2px solid #252525;
+    border: 2px solid $font-color-252525;
     margin-right: 9px;
 }
 
@@ -166,7 +172,7 @@ header nav ul {
         list-style: none;
         padding: 4px 12px;
 
-        background: #F2F2F2;
+        background: $font-color-F2F2F2;
         border-radius: 28px;
 
         p {
@@ -190,7 +196,7 @@ header nav ul {
         font-weight: 800;
         font-size: 55px;
         line-height: 60px;
-        color: #000000;
+        color: $font-color-000;
         width: 506px;
         padding-top: 40px;
         padding-left: 40px;
@@ -200,7 +206,7 @@ header nav ul {
     p {
         font-size: 22px;
         line-height: 40px;
-        color: #000000;
+        color: $font-color-000;
         width: 552px;
         padding-top: 21px;
         padding-left: 40px;
@@ -241,7 +247,7 @@ header nav ul {
 
     .stage1 {
         @extend %stages;
-        border-color: #DFDFDE;
+        border-color: $font-color-DFDFDE;
     }
 
     .stage2 {
@@ -268,7 +274,7 @@ header nav ul {
         margin: auto 0 auto 0;
         font-size: 13px;
 
-        color: #787878;
+        color: $font-color-787878;
     }
 }
 
@@ -301,8 +307,8 @@ header nav ul {
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.01em;
-        color: #A8A8A8;
-        border: 1px solid #282828;
+        color: $font-color-A8A8A8;
+        border: 1px solid $font-color-282828;
         box-sizing: border-box;
         border-radius: 40px;
     }
@@ -312,7 +318,7 @@ header nav ul {
     margin: 52px auto 0 auto;
     width: 304px;
     height: 48px;
-    background: #252525;
+    background: $font-color-252525;
     border-radius: 4px;
 
     p {
@@ -335,8 +341,8 @@ header nav ul {
     justify-content: center;
     height: 193px;
     width: 100%;
-    border-top: 1px solid #DFDFDE;
-    border-bottom: 1px solid #DFDFDE;
+    border-top: 1px solid $font-color-DFDFDE;
+    border-bottom: 1px solid $font-color-DFDFDE;
 
     .logo-container {
         @extend %display-flex-spb;
@@ -444,7 +450,7 @@ header nav ul {
     padding: 0px 12px;
     width: 156px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $font-color-000;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
@@ -455,7 +461,7 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.17em;
         text-transform: uppercase;
-        color: #000000;
+        color: $font-color-000;
         margin-right: 7px;
     }
 
@@ -487,7 +493,7 @@ header nav ul {
 .btn-show-all-d {
     width: 1216px;
     height: 48px;
-    border: 1px solid #DFDFDE;
+    border: 1px solid $font-color-DFDFDE;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
@@ -579,7 +585,7 @@ header nav ul {
     padding: 0px 12px;
     width: 156px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $font-color-000;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
@@ -590,7 +596,7 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.17em;
         text-transform: uppercase;
-        color: #000000;
+        color: $font-color-000;
         margin-right: 7px;
     }
 
@@ -635,7 +641,7 @@ header nav ul {
         font-weight: 600;
         font-size: 22px;
         line-height: 32px;
-        color: #000000;
+        color: $font-color-000;
     }
 }
 
@@ -667,7 +673,7 @@ header nav ul {
 .btn-show-all-d {
     width: 1216px;
     height: 48px;
-    border: 1px solid #DFDFDE;
+    border: 1px solid $font-color-DFDFDE;
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
@@ -765,7 +771,7 @@ header nav ul {
     height: 56px;
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px solid #DFDFDE;
+    border-bottom: 1px solid $font-color-DFDFDE;
 
     p {
         margin-left: 95px;
@@ -774,7 +780,7 @@ header nav ul {
         font-weight: 600;
         font-size: 26px;
         line-height: 30px;
-        color: #A8A8A8;
+        color: $font-color-A8A8A8;
     }
 
     .edu1 {
@@ -788,7 +794,7 @@ header nav ul {
     margin-bottom: 31px;
     width: 279px;
     height: 48px;
-    border: 1px solid #DFDFDE;
+    border: 1px solid $font-color-DFDFDE;
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -808,7 +814,7 @@ header nav ul {
 
 .questions {
     margin-top: 30px;
-    background-color: #000000;
+    background-color: $font-color-000;
     display: flex;
     flex-direction: column;
 }
@@ -817,7 +823,7 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     height: 112px;
-    border-bottom: 1px solid #4A4A4A;
+    border-bottom: 1px solid $font-color-4A4A4A;
 
     h2 {
         margin: auto 0 auto 0;
@@ -836,7 +842,7 @@ header nav ul {
         font-size: 13px;
         line-height: 22px;
         text-align: right;
-        color: #787878;
+        color: $font-color-787878;
     }
 
     h3,
@@ -847,7 +853,7 @@ header nav ul {
         font-weight: 600;
         font-size: 22px;
         line-height: 40px;
-        color: #FFFFFF;
+        color: $font-color-fff;
     }
 
     h4 {
@@ -902,7 +908,7 @@ header nav ul {
         height: 44px;
         font-size: 13px;
         line-height: 22px;
-        color: #787878;
+        color: $font-color-787878;
     }
 }
 
@@ -924,7 +930,7 @@ header nav ul {
         height: 66px;
         font-size: 13px;
         line-height: 22px;
-        color: #787878;
+        color: $font-color-787878;
     }
 }
 
@@ -941,13 +947,13 @@ header nav ul {
     input {
         width: 312px;
         height: 56px;
-        background: #F2F2F2;
+        background: $font-color-F2F2F2;
         border-radius: 4px;
         padding-left: 19px;
     }
 
     ::placeholder {
-        color: #A8A8A8;
+        color: $font-color-A8A8A8;
         font-size: 16px;
         line-height: 22px;
 
@@ -972,26 +978,31 @@ header nav ul {
         color: $font-color-000;
     }
 
-    input {
-        width: 343px;
-        height: 176px;
-        padding-top: 17px;
-        padding-left: 19px;
-        background: #F2F2F2;
-        border-radius: 4px;
+
+    
+}
+
+.tellme-input {
+    width: 343px;
+    height: 176px;
+    background: $font-color-F2F2F2;
+    border-radius: 4px;
+    .tellme-input::placeholder {
+        width: 240px;
+        height: 44px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: $font-color-A8A8A8;
     }
-}
 
-.tellme-input::placeholder {
-    width: 240px;
-    height: 44px;
 }
-
 .send-que-btn {
     width: 344px;
     height: 63px;
     border-radius: 4px;
-    background-color: #000000;
+    background-color: $font-color-000;
 
     p {
         margin: auto;
@@ -1038,7 +1049,7 @@ header nav ul {
         height: 23px;
         font-size: 13px;
         line-height: 22px;
-        color: $font-color-fff
+        color: $font-color-fff;
     }
 }
 
@@ -1062,7 +1073,7 @@ header nav ul {
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.01em;
-        color: #FFFFFF;
+        color: $font-color-fff;
     }
 }
 
