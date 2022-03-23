@@ -74,6 +74,7 @@ header {
 
 .container {
     max-width: 1217px;
+    margin: auto;
 }
 
 @media screen and (max-width:768px) {
@@ -85,8 +86,9 @@ header {
 
 body {
     width: 1217px;
-    background-color: $font-color-fff;
     margin: auto;
+    background-color: $font-color-fff;
+    
 
 
 }
@@ -833,6 +835,7 @@ header nav ul {
 }
 
 .que {
+    padding-left: 60px;
     display: flex;
     justify-content: space-between;
     height: 112px;
@@ -847,6 +850,7 @@ header nav ul {
     }
 
     p {
+        padding-right: 60px;
         margin-top: auto;
         margin-bottom: auto;
         width: 277px;
@@ -877,13 +881,20 @@ header nav ul {
 // WHITE BLOCK //////////////////////////////////////
 
 .white-block {
-    margin-left: auto;
-    margin-right: auto;
-    @extend %display-flex-spb;
+    display: flex;
+    margin-left: 64px;
+    margin-right: 73px;
     margin-top: 128px;
-    width: 1216px;
+    width: auto;
     height: 419px;
-    background-color: $font-color-fff;
+    background-color: #fff;
+    // margin-left: auto;
+    // margin-right: auto;
+    // @extend %display-flex-spb;
+    // margin-top: 128px;
+    // width: 1216px;
+    // height: 419px;
+    // background-color: $font-color-fff;
 }
 
 .manager-block {
@@ -894,7 +905,7 @@ header nav ul {
     height: 294px;
 
     h1 {
-        width: 312px;
+        width: 311px;
         height: 102px;
         font-weight: 700;
         font-size: 44px;
@@ -917,6 +928,7 @@ header nav ul {
     @extend %display-flex-spb;
 
     p {
+        margin: auto auto auto 15px;
         width: 232px;
         height: 44px;
         font-size: 13px;
@@ -928,12 +940,14 @@ header nav ul {
 .manager-icon {
     width: 50px;
     height: 50px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/avatar_small.png);
 }
 
 .form-block {
     display: flex;
+    margin-left: 40px;
     flex-direction: column;
     justify-content: space-between;
     height: 307px;
@@ -955,12 +969,14 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.01em;
         color: $font-color-000;
+        margin-bottom: 11px;
     }
 
     input {
         width: 312px;
         height: 56px;
         background: $font-color-F2F2F2;
+        border: 0;
         border-radius: 4px;
         padding-left: 19px;
     }
@@ -975,6 +991,7 @@ header nav ul {
 
 .question-block {
     display: flex;
+    margin-left: 72px;
     flex-direction: column;
     justify-content: space-between;
     height: 294px;
@@ -989,26 +1006,25 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.01em;
         color: $font-color-000;
+        margin-bottom: 11px;
     }
-
-
-
-}
-
-.tellme-input {
-    width: 343px;
-    height: 176px;
-    background: $font-color-F2F2F2;
-    border-radius: 4px;
-
-    .tellme-input::placeholder {
-        width: 240px;
-        height: 44px;
-        text-align: left;
+    input {
+        width: 343px;
+        height: 176px;
+        border: 0;
+        background: $font-color-F2F2F2;
+        border-radius: 4px;
+    }
+    ::placeholder {
+        padding-left: 19px;
+        transform: translateY(-65px);
+        white-space: normal;
+        max-width: 240px;
+        height: 50px;
         font-size: 16px;
-        line-height: 22px;
         letter-spacing: 0.01em;
         color: $font-color-A8A8A8;
+        
     }
 
 }
@@ -1165,6 +1181,7 @@ header nav ul {
 
 @media screen and (max-width:425px) {
 
+
     .header-contact-info {
         margin: 0 auto;
         flex-direction: column;
@@ -1173,8 +1190,8 @@ header nav ul {
     .header-logo {
         margin: 0 auto;
         background-size: contain;
-        width: 590px;
-        height: 200px;
+        width: 390px;
+        height: 100px;
     }
 
     .header-block-contact {
@@ -1187,9 +1204,7 @@ header nav ul {
         justify-content: center;
     }
 
-    .item-vk,
-    .item-inst,
-    .item-whatsapp {
+    .item-vk {
         background-size: contain;
         width: 108px;
         height: 108px;
@@ -1197,10 +1212,10 @@ header nav ul {
     }
 
     .header-avatar-icon {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         background-size: contain;
-        margin-right: 8px;
+        margin-right: 18px;
 
     }
 
@@ -1231,14 +1246,15 @@ header nav ul {
 
     nav ul {
         margin-top: 50px;
-        flex-direction: column;
-
+        flex-wrap: wrap;
         li {
+            width: 350px;
             margin-bottom: 10px;
+            margin-bottom: 30px;
 
             p {
-                padding-left: 20px;
-                font-size: 500%;
+                text-align: center;
+                font-size: 300%;
             }
         }
     }
@@ -1475,6 +1491,7 @@ header nav ul {
                 width: auto;
                 height: auto;
                 margin: 40px auto;
+                padding-left: 30px;
                 text-align: left;
 
             }
@@ -1522,17 +1539,21 @@ header nav ul {
     }
 
     .que {
-
+       
+        height: 212px;
+        
         h2,
         h3,
         h4 {
-            font-size: 35px;
+            font-size: 45px;
             width: auto;
+            line-height: 1;
         }
 
         p {
-            width: 50%;
-            font-size: 25px;
+            line-height: 1;
+            width: 60%;
+            font-size: 35px;
         }
     }
 
@@ -1568,7 +1589,9 @@ header nav ul {
 
             .form-block p {
                 height: 50px;
+                font-size: 55px;
                 line-height: 1px;
+                margin-top: 40px;
             }
 
 
@@ -1579,14 +1602,25 @@ header nav ul {
                 margin-bottom: 30px;
 
                 p {
-                    margin-top: 30px;
+                    margin-top: 30px; 
                     margin-bottom: 30px;
+                }
+                input {
+                    width: 924px;
+                    height: 151px;
+                }
+                ::placeholder {
+                    padding-top: 25px;
+                    padding-left: 25px;
+                    font-size: 50px;
+                    line-height: 50px;
+                    
                 }
             }
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 70px;
             width: 100%;
             text-align: center;
         }
@@ -1594,8 +1628,9 @@ header nav ul {
         p {
             width: 100%;
             height: auto;
-            font-size: 40px;
+            font-size: 45px;
             text-align: center;
+            line-height: 1;
         }
 
         .question-block {
@@ -1605,9 +1640,20 @@ header nav ul {
 
         .tellme {
             input {
+                width: 924px;
+                height: 451px;
                 margin-top: 30px;
             }
-
+            ::placeholder {
+                padding-left: 19px;
+                transform: translateY(-95px);
+                white-space: normal;
+                max-width: 740px;
+                height: 450px;
+        
+                letter-spacing: 0.01em;
+                font-size: 50px;
+            }
             text-align: center;
             flex-direction: column;
             align-items: center;
