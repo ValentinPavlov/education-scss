@@ -1206,6 +1206,10 @@ header nav ul li p {
 }
 
 @media screen and (max-width: 425px) {
+  header {
+    margin-bottom: 0;
+  }
+
   .header-contact-info {
     margin: 0 auto;
     -webkit-box-orient: vertical;
@@ -1277,6 +1281,7 @@ header nav ul li p {
   }
 
   nav ul {
+    padding: 30px;
     margin-top: 50px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1301,7 +1306,7 @@ header nav ul li p {
 
   .ed-main-img {
     width: 1222px;
-    height: 1000px;
+    height: 830px;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1322,13 +1327,14 @@ header nav ul li p {
     height: auto;
   }
   .ed-main-img p {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     font-size: 50px;
-    width: 100%;
+    width: auto;
+    line-height: 1;
   }
   .ed-main-img ul {
-    margin: 50px auto;
+    margin: 50px 0 50px 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1336,16 +1342,12 @@ header nav ul li p {
     font-size: 50px;
   }
   .ed-main-img .moscow-img {
-    margin: auto;
-    position: unset;
-    width: 300px;
-    height: 300px;
-    background-size: contain;
+    display: none;
   }
 
   .ed-request {
     width: 1222px;
-    height: 1250px;
+    height: 1100px;
   }
   .ed-request .stages {
     width: 500px;
@@ -1378,7 +1380,7 @@ header nav ul li p {
     width: auto;
   }
   .ed-request .ed-up-text .ed-request-text {
-    font-size: 80px;
+    font-size: 70px;
   }
   .ed-request .ed-up-text .stage-number {
     font-size: 50px;
@@ -1402,7 +1404,7 @@ header nav ul li p {
     height: 87px;
     padding: 24px 24px;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 45px;
     line-height: 22px;
     letter-spacing: 0.01em;
     color: #A8A8A8;
@@ -1425,8 +1427,12 @@ header nav ul li p {
     font-size: 50px;
   }
 
+  .univer-bar {
+    display: none;
+  }
+
   .directions h1 {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
   }
 
@@ -1437,7 +1443,7 @@ header nav ul li p {
     margin-top: 100px;
   }
   .items__of_directions .flex-item-d p {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .all_blocks-d {
@@ -1495,8 +1501,9 @@ header nav ul li p {
   }
 
   .btn-show-all-d {
-    width: 1216px;
+    width: 1000px;
     height: 112px;
+    margin: 40px auto 80px auto;
   }
   .btn-show-all-d p {
     font-size: 40px;
@@ -1517,7 +1524,7 @@ header nav ul li p {
   .adv-first-container .advantage-info,
 .adv-second-container .advantage-info,
 .adv-third-container .advantage-info {
-    margin: auto;
+    margin: 50px auto;
     width: auto;
   }
   .adv-first-container .advantage-info p,
@@ -1540,7 +1547,7 @@ header nav ul li p {
 .adv-third-container .advantage-info h3,
 .adv-third-container .advantage-info h4 {
     margin: auto;
-    font-size: 80px;
+    font-size: 70px;
     width: auto;
     height: auto;
     text-align: center;
@@ -1627,23 +1634,7 @@ header nav ul li p {
 .white-block .personal-manager .personal-manager,
 .white-block .form-block .personal-manager,
 .white-block .question-block .personal-manager {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .white-block .manager-block .personal-manager .manager-icon,
-.white-block .personal-manager .personal-manager .manager-icon,
-.white-block .form-block .personal-manager .manager-icon,
-.white-block .question-block .personal-manager .manager-icon {
-    background-size: cover;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    height: 300px;
-    width: 300px;
+    display: none;
   }
   .white-block .manager-block .form-block p,
 .white-block .personal-manager .form-block p,
@@ -1801,6 +1792,11 @@ header nav ul li p {
     letter-spacing: 0.01em;
     font-size: 50px;
   }
+  .white-block .send-que-btn {
+    width: 600px;
+    height: 104px;
+    margin-top: 50px;
+  }
 
   .footer-elements {
     -webkit-box-orient: vertical;
@@ -1844,10 +1840,13 @@ header nav ul li p {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
+    font-size: 40px;
     width: auto;
     height: 60px;
     line-height: 50px;
+  }
+  .footer-elements .politics a {
+    font-size: 30px;
   }
   .footer-elements .number-time-cont {
     width: auto;
