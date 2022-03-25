@@ -39,17 +39,6 @@ $font-color-4A4A4A:#4A4A4A;
     margin: auto 0 auto 0;
 }
 
-%direct-background {
-    display: flex;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 320px;
-    height: 200px;
-    margin-top: 31px;
-    @extend %display-flex-spb;
-    padding: 24px 32px;
-}
-
 %svg-d {
     background-image: url(../img/Туризм_png.png);
     background-size: contain;
@@ -77,18 +66,11 @@ header {
     margin: auto;
 }
 
-@media screen and (max-width:768px) {
-    .container {
-        max-width: none;
-    }
-
-}
-
 body {
     width: 1217px;
     margin: auto;
     background-color: $font-color-fff;
-    
+
 
 
 }
@@ -519,7 +501,7 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.17em;
         text-transform: uppercase;
-        color: #000000;
+        color: $font-color-000;
         margin: auto;
         text-align: center;
     }
@@ -650,7 +632,13 @@ header nav ul {
 }
 
 .block-flex {
-    @extend %direct-background;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 200px;
+    margin-top: 31px;
+    padding: 24px 32px;
 
     h2 {
         font-weight: 600;
@@ -701,7 +689,7 @@ header nav ul {
         line-height: 22px;
         letter-spacing: 0.17em;
         text-transform: uppercase;
-        color: #000000;
+        color: $font-color-000;
         margin: auto;
         text-align: center;
     }
@@ -887,14 +875,7 @@ header nav ul {
     margin-top: 128px;
     width: auto;
     height: 419px;
-    background-color: #fff;
-    // margin-left: auto;
-    // margin-right: auto;
-    // @extend %display-flex-spb;
-    // margin-top: 128px;
-    // width: 1216px;
-    // height: 419px;
-    // background-color: $font-color-fff;
+    background-color: $font-color-fff;
 }
 
 .manager-block {
@@ -1008,6 +989,7 @@ header nav ul {
         color: $font-color-000;
         margin-bottom: 11px;
     }
+
     input {
         width: 343px;
         height: 176px;
@@ -1015,6 +997,7 @@ header nav ul {
         background: $font-color-F2F2F2;
         border-radius: 4px;
     }
+
     ::placeholder {
         padding-left: 19px;
         transform: translateY(-65px);
@@ -1024,7 +1007,7 @@ header nav ul {
         font-size: 16px;
         letter-spacing: 0.01em;
         color: $font-color-A8A8A8;
-        
+
     }
 
 }
@@ -1251,6 +1234,7 @@ header nav ul {
         padding: 30px;
         margin-top: 50px;
         flex-wrap: wrap;
+
         li {
             width: 350px;
             margin-bottom: 10px;
@@ -1300,7 +1284,7 @@ header nav ul {
         }
 
         .moscow-img {
-       display: none;
+            display: none;
         }
     }
 
@@ -1366,8 +1350,8 @@ header nav ul {
                     font-size: 45px;
                     line-height: 22px;
                     letter-spacing: 0.01em;
-                    color: #A8A8A8;
-                    border: 6px solid #282828;
+                    color: $font-color-A8A8A8;
+                    border: 6px solid $font-color-282828;
                     -webkit-box-sizing: border-box;
                     box-sizing: border-box;
                     border-radius: 40px;
@@ -1390,9 +1374,11 @@ header nav ul {
             }
         }
     }
-.univer-bar {
-    display: none;
-}
+
+    .univer-bar {
+        display: none;
+    }
+
     .directions {
         h1 {
             font-size: 70px;
@@ -1472,6 +1458,7 @@ header nav ul {
         width: 1000px;
         height: 112px;
         margin: 40px auto 80px auto;
+
         p {
             font-size: 40px;
         }
@@ -1541,9 +1528,9 @@ header nav ul {
     }
 
     .que {
-       
+
         height: 212px;
-        
+
         h2,
         h3,
         h4 {
@@ -1595,23 +1582,25 @@ header nav ul {
                 margin-bottom: 30px;
 
                 p {
-                    margin-top: 30px; 
+                    margin-top: 30px;
                     margin-bottom: 30px;
                 }
+
                 input {
                     width: 924px;
                     height: 151px;
                 }
+
                 ::placeholder {
                     padding-top: 25px;
                     padding-left: 25px;
                     font-size: 50px;
                     line-height: 50px;
-                    
+
                 }
             }
         }
-     
+
         h1 {
             font-size: 70px;
             width: 100%;
@@ -1637,21 +1626,24 @@ header nav ul {
                 height: 451px;
                 margin-top: 30px;
             }
+
             ::placeholder {
                 padding-left: 19px;
                 transform: translateY(-95px);
                 white-space: normal;
                 max-width: 740px;
                 height: 450px;
-        
+
                 letter-spacing: 0.01em;
                 font-size: 50px;
             }
+
             text-align: center;
             flex-direction: column;
             align-items: center;
             margin: auto;
         }
+
         .send-que-btn {
             width: 600px;
             height: 104px;

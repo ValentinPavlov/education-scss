@@ -27,18 +27,6 @@
   margin: auto 0 auto 0;
 }
 
-.block-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 320px;
-  height: 200px;
-  margin-top: 31px;
-  padding: 24px 32px;
-}
-
 .svg--d6, .svg--d5, .svg--d4, .svg--d3, .svg--d2, .svg--d1 {
   background-image: url(../img/Туризм_png.png);
   background-size: contain;
@@ -66,11 +54,6 @@ header {
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: none;
-  }
-}
 body {
   width: 1217px;
   margin: auto;
@@ -605,6 +588,17 @@ header nav ul li p {
   background-image: url(../img/Реклама.svg);
 }
 
+.block-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 320px;
+  height: 200px;
+  margin-top: 31px;
+  padding: 24px 32px;
+}
 .block-flex h2 {
   font-weight: 600;
   font-size: 22px;
